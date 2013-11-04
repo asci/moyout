@@ -91,23 +91,31 @@ body {
     border-top: 1px solid lightsteelblue;
 }
 
-.moyout-button.moyout-button__big {
-    padding: 10px 20px;
-    font-size: 130%;
-}
-
 .moyout-button {
-    padding: 5px 10px;
     background-color: dimgray;
+    padding: 7px 15px;
+    font-size: 110%;
     border: 0;
-    font-size: 100%;
     color: white;
+}
+.moyout-button.moyout-button__small {
+    padding: 3px 6px;
+    font-size: 80%;
+}
+.moyout-button.moyout-button__big {
+    padding: 15px 30px;
+    font-size: 150%;
 }
 
 .moyout-button:active {
     background-color: darkgrey;
 }
-
+.moyout-button.moyout-button__red {
+    background-color: #dd0000;
+}
+.moyout-button.moyout-button__red:active {
+    background-color: #ff4444;
+}
 .moyout-block__title {
     color: #555;
     display: block;
