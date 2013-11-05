@@ -2,9 +2,17 @@
 <html>
 <head>
     <title>Moyout</title>
-    <link href="css/moyout.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
+    <link href="css/moyout.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.moyout-head__button').click(function (e) {
+                $('.moyout-menu').toggleClass('moyout-menu_showed');
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -36,15 +44,67 @@
             </li>
         </ul>
     </div>
-    <div class="buttons">
-        <div class="moyout-block">
-            <h3 class="moyout-block__title">Buttons:</h3>
-            <button class="moyout-button moyout-button__small">Small</button>
-            <button class="moyout-button">Normal</button>
-            <button class="moyout-button moyout-button__big">Big</button>
-            <button class="moyout-button moyout-button__red">Red</button>
+    <div class="moyout-content">
+        <div class="buttons">
+            <div class="moyout-block  moyout-block_silent">
+                <h3 class="moyout-block__title">Buttons:</h3>
+                <h4 class="moyout-block__subtitle">Sizes:</h4>
+                <button class="moyout-button moyout-button__small">Small
+                </button>
+                <button class="moyout-button">Normal</button>
+                <button class="moyout-button moyout-button__big">Big</button>
+                <h4 class="moyout-block__subtitle">Colored:</h4>
+                <button class="moyout-button moyout-button__bad">Bad</button>
+                <button class="moyout-button moyout-button__good">Good</button>
+            </div>
+            <div class="moyout-block">
+                <h3 class="moyout-block__title">Buttons:</h3>
+                <h4 class="moyout-block__subtitle">Colored:</h4>
+                <button class="moyout-button moyout-button__bad">Bad</button>
+                <button class="moyout-button moyout-button__good">Good</button>
+                <div class="moyout-block__list">
+                    <h4 class="moyout-block__subtitle">Sections:</h4>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                    <div class="moyout-block__section">
+                        Some text#2
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 </header>
 </body>
 </html>

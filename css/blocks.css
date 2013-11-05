@@ -1,3 +1,20 @@
+.moyout-block__subtitle {
+    color: #555;
+    display: block;
+    width: 100%;
+    font-size: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.moyout-block__section+.moyout-block__section {
+    border-top: 1px solid #ccc;
+}
+.moyout-block__section {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
 .moyout-block__title {
     color: #555;
     display: block;
@@ -12,5 +29,10 @@
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    /*box-shadow: 0 1px 7px rgba(50, 50, 50, 0.2);*/
+}
+.moyout-block.moyout-block_silent {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin: 0;
 }

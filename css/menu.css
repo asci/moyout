@@ -1,11 +1,17 @@
+.moyout-menu.moyout-menu_showed {
+    left: 0;
+    height: 100%;
+}
 .moyout-menu {
-    position: absolute;
+    position: fixed;
+    left: -100%;
+    top: 50px;
     padding-bottom: 50px;
     width: 100%;
     display: block;
     background-color: #4d4d4d;
     height: 100%;
-    left: -100%;
+    transition: left .3s;
 }
 
 .moyout-menu__list {

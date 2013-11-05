@@ -17,9 +17,15 @@
 .moyout-button:active {
     background-color: darkgrey;
 }
-.moyout-button.moyout-button__red {
+.moyout-button.moyout-button__bad {
     background-color: #dd0000;
 }
-.moyout-button.moyout-button__red:active {
+.moyout-button.moyout-button__bad:active {
     background-color: #ff4444;
+}
+.moyout-button.moyout-button__good {
+    background-color: #00dd00;
+}
+.moyout-button.moyout-button__good:active {
+    background-color: #44ff44;
 }

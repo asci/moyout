@@ -4,6 +4,8 @@
     background-color: lightskyblue;
     color: white;
     line-height: 50px;
+    position: fixed;
+    top: 0;
 }
 
 .moyout-head__left {
