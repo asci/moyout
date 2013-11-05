@@ -1,0 +1,16 @@
+.moyout-block__title {
+    color: #555;
+    display: block;
+    width: 100%;
+    font-size: 110%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.moyout-block {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    /*box-shadow: 0 1px 7px rgba(50, 50, 50, 0.2);*/
+}
