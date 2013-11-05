@@ -1,0 +1,20 @@
+label.moyout-text {
+    border: 0;
+    color: dimgray;
+    font-size: 100%;
+}
+input.moyout-text {
+    color: dimgray;
+    padding: 7px;
+    font-size: 100%;
+    border: 1px solid dimgray;
+    background-color: white;
+}
+.moyout-text.moyout-text__small {
+    padding: 3px 6px;
+    font-size: 80%;
+}
+.moyout-text.moyout-text__big {
+    padding: 15px 30px;
+    font-size: 150%;
+}

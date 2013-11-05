@@ -2,6 +2,7 @@
 @import "menu.css";
 @import "blocks.css";
 @import "buttons.css";
+@import "inputs.css";
 * {
     padding: 0;
     margin: 0;
@@ -14,4 +15,19 @@ body {
 }
 .moyout-content {
     margin-top: 50px;
+}
+
+
+.moyout-soiler__label {
+    color: dimgray;
+    border-bottom: 1px dashed dimgray;
+}
+.moyout-soiler__label:active {
+    display: none;
+}
+.moyout-soiler__label:active+.moyout-soiler__content {
+    display: block;
+}
+.moyout-soiler__content {
+    display: none;
 }
