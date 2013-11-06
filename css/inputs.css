@@ -1,8 +1,9 @@
-label.moyout-text {
+.moyout-label {
     border: 0;
     color: dimgray;
     font-size: 100%;
 }
+
 input.moyout-text {
     color: dimgray;
     padding: 7px;
@@ -10,11 +11,24 @@ input.moyout-text {
     border: 1px solid dimgray;
     background-color: white;
 }
-.moyout-text.moyout-text__small {
+
+.moyout-text.moyout-text_small {
     padding: 3px 6px;
     font-size: 80%;
 }
-.moyout-text.moyout-text__big {
+
+.moyout-text.moyout-text_big {
     padding: 15px 30px;
     font-size: 150%;
+}
+
+input.moyout-checkbox:checked {
+    background-color: cadetblue;
+}
+input.moyout-checkbox {
+    -webkit-appearance: none;
+    background-color: lightsteelblue;
+    border: 5px solid dimgray;
+    width: 25px;
+    height: 25px;
 }
