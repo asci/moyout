@@ -4,17 +4,17 @@
   top: 50px;
   position: fixed;
   height: 50px;
-  line-height: 50px;
 }
 .moyout-top-tabs {
   width: 100%;
-  background-color: @header-back;
   color: @text-counter;
+  background-color: @button-normal;
 }
 .moyout-top-tabs__list {
   display: block;
   width: 100%;
-  border-top: @color-border-light 1px solid;
+  height: 50px;
+  border-top: @button-light 1px solid;
 }
 .moyout-top-tabs_cols_3 {
   .moyout-top-tabs__item {
@@ -23,14 +23,23 @@
 }
 .moyout-top-tabs_cols_2 {
   .moyout-top-tabs__item {
-    width: 49.6%;
+    width: 49.0%;
   }
+}
+.moyout-top-tabs__item+.moyout-top-tabs__item {
+  border-left: @button-light 1px solid;
 }
 .moyout-top-tabs__item {
   display: inline-block;
   text-align: center;
+  height: 50px;
 }
 .moyout-top-tabs__item a {
-  padding: 10px;
+  background-color: @button-normal;
   color: @text-counter;
+  text-decoration: none;
+  height: 49px;
+  line-height: 49px;
+  display: block;
+  width: 100%;
 }

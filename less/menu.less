@@ -11,11 +11,21 @@
   padding-bottom: 50px;
   width: 100%;
   display: block;
-  background-color: #4d4d4d;
+  background-color: @menu-back;
   height: 100%;
   transition: left .3s;
 }
 
+.moyout-menu__title {
+  color: @text-counter;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 120%;
+  font-weight: 100;
+  background: @menu-item;
+  border-bottom: 1px solid @color-border-light;
+}
 .moyout-menu__list {
   position: relative;
   height: 100%;
@@ -24,14 +34,14 @@
 .moyout-menu__item {
   height: 50px;
   line-height: 50px;
-  color: ghostwhite;
-  background-color: dimgray;
+  color: @text-counter;
+  background-color: @menu-item;
   padding-left: 10px;
 }
 
 .moyout-menu__item a {
   text-decoration: none;
-  color: ghostwhite;
+  color: @text-counter;
   height: 50px;
   line-height: 50px;
   width: 100%;
@@ -39,9 +49,5 @@
 }
 
 .moyout-menu__item_top {
-  border-bottom: 1px solid lightsteelblue;
-}
-
-.moyout-menu__item_bottom {
-  border-top: 1px solid lightsteelblue;
+  border-bottom: 1px solid @color-border-light;
 }
