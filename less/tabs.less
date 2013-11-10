@@ -1,0 +1,36 @@
+@import "colors";
+
+.moyout-head+.moyout-top-tabs {
+  top: 50px;
+  position: fixed;
+  height: 50px;
+  line-height: 50px;
+}
+.moyout-top-tabs {
+  width: 100%;
+  background-color: @header-back;
+  color: @text-counter;
+}
+.moyout-top-tabs__list {
+  display: block;
+  width: 100%;
+  border-top: @color-border-light 1px solid;
+}
+.moyout-top-tabs_cols_3 {
+  .moyout-top-tabs__item {
+    width: 32.5%;
+  }
+}
+.moyout-top-tabs_cols_2 {
+  .moyout-top-tabs__item {
+    width: 49.6%;
+  }
+}
+.moyout-top-tabs__item {
+  display: inline-block;
+  text-align: center;
+}
+.moyout-top-tabs__item a {
+  padding: 10px;
+  color: @text-counter;
+}

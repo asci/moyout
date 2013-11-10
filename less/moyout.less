@@ -4,6 +4,7 @@
 @import "menu";
 @import "blocks";
 @import "inputs";
+@import "tabs";
 
 * {
   padding: 0;
@@ -16,8 +17,11 @@ body {
   background-color: @color-back;
 }
 
-.moyout-content {
+.moyout-head+.moyout-content {
   margin-top: 50px;
+}
+.moyout-head+.moyout-top-tabs+.moyout-content {
+  margin-top: 100px;
 }
 
 .moyout-soiler__label {

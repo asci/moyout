@@ -172,6 +172,36 @@ input.moyout-date {
   border: 1px solid #222222;
   background-color: #ffffff;
 }
+.moyout-head + .moyout-top-tabs {
+  top: 50px;
+  position: fixed;
+  height: 50px;
+  line-height: 50px;
+}
+.moyout-top-tabs {
+  width: 100%;
+  background-color: #336699;
+  color: #ffffff;
+}
+.moyout-top-tabs__list {
+  display: block;
+  width: 100%;
+  border-top: #cccccc 1px solid;
+}
+.moyout-top-tabs_cols_3 .moyout-top-tabs__item {
+  width: 32.5%;
+}
+.moyout-top-tabs_cols_2 .moyout-top-tabs__item {
+  width: 49.6%;
+}
+.moyout-top-tabs__item {
+  display: inline-block;
+  text-align: center;
+}
+.moyout-top-tabs__item a {
+  padding: 10px;
+  color: #ffffff;
+}
 * {
   padding: 0;
   margin: 0;
@@ -181,8 +211,11 @@ body {
   font-size: 15px;
   background-color: #eeeeee;
 }
-.moyout-content {
+.moyout-head + .moyout-content {
   margin-top: 50px;
+}
+.moyout-head + .moyout-top-tabs + .moyout-content {
+  margin-top: 100px;
 }
 .moyout-soiler__label {
   color: #696969;
