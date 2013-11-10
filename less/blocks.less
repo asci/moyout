@@ -1,0 +1,41 @@
+@import "colors";
+
+.moyout-block__subtitle {
+  color: #555;
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.moyout-block__section+.moyout-block__section {
+  border-top: 1px solid @color-border-light;
+}
+.moyout-block__section {
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 60px;
+}
+.moyout-block__title {
+  color: #555;
+  display: block;
+  width: 100%;
+  font-size: 110%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid @color-border-light;
+  margin-bottom: 10px;
+}
+.moyout-block {
+  background-color: @input-back;
+  border: 1px solid @color-border-light;
+  padding: 10px;
+  margin: 10px;
+}
+.moyout-block.moyout-block_silent {
+  background-color: @input-back;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+@import "colors";
+
+.moyout-button {
+  background-color: @button-dark;
+  padding: 7px 15px;
+  font-size: 110%;
+  border: 0;
+  color: @button-text;
+}
+
+.moyout-button.moyout-button_small {
+  padding: 3px 6px;
+  font-size: 80%;
+}
+
+.moyout-button.moyout-button_big {
+  padding: 15px 30px;
+  font-size: 150%;
+}
+
+.moyout-button:active {
+  background-color: @button-normal;
+}
+
+.moyout-button.moyout-button_bad {
+  background-color: @button-bad;
+}
+.moyout-button.moyout-button_bad:active {
+  background-color: @button-bad-light;
+}
+
+.moyout-button.moyout-button_disabled {
+  background-color: @button-disabled!important;
+  color: @button-disabled-text!important;
+}

@@ -1,0 +1,47 @@
+@import "colors";
+
+.moyout-menu.moyout-menu_showed {
+  left: 0;
+  height: 100%;
+}
+.moyout-menu {
+  position: fixed;
+  left: -100%;
+  top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: block;
+  background-color: #4d4d4d;
+  height: 100%;
+  transition: left .3s;
+}
+
+.moyout-menu__list {
+  position: relative;
+  height: 100%;
+}
+
+.moyout-menu__item {
+  height: 50px;
+  line-height: 50px;
+  color: ghostwhite;
+  background-color: dimgray;
+  padding-left: 10px;
+}
+
+.moyout-menu__item a {
+  text-decoration: none;
+  color: ghostwhite;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: block;
+}
+
+.moyout-menu__item_top {
+  border-bottom: 1px solid lightsteelblue;
+}
+
+.moyout-menu__item_bottom {
+  border-top: 1px solid lightsteelblue;
+}

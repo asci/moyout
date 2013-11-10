@@ -1,33 +1,199 @@
-@import "header.css";
-@import "menu.css";
-@import "blocks.css";
-@import "buttons.css";
-@import "inputs.css";
-* {
-    padding: 0;
-    margin: 0;
+.moyout-button {
+  background-color: #336699;
+  padding: 7px 15px;
+  font-size: 110%;
+  border: 0;
+  color: #ffffff;
 }
-
+.moyout-button.moyout-button_small {
+  padding: 3px 6px;
+  font-size: 80%;
+}
+.moyout-button.moyout-button_big {
+  padding: 15px 30px;
+  font-size: 150%;
+}
+.moyout-button:active {
+  background-color: #6699cc;
+}
+.moyout-button.moyout-button_bad {
+  background-color: #d40000;
+}
+.moyout-button.moyout-button_bad:active {
+  background-color: #ff6343;
+}
+.moyout-button.moyout-button_disabled {
+  background-color: #8a8a8a !important;
+  color: #cccccc !important;
+}
+.moyout-head {
+  width: 100%;
+  height: 50px;
+  background-color: #336699;
+  color: white;
+  line-height: 50px;
+  position: fixed;
+  top: 0;
+}
+.moyout-head__left {
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+}
+.moyout-head__center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.moyout-head__title {
+  font-size: 120%;
+  font-weight: 100;
+}
+.moyout-head__right {
+  position: absolute;
+  right: 10px;
+}
+.moyout-head__button {
+  background-color: #6699cc;
+  border: 0;
+  font-size: 100%;
+  padding: 5px 10px;
+  color: white;
+}
+.moyout-head__button:active {
+  background-color: #aaccee;
+}
+.moyout-menu.moyout-menu_showed {
+  left: 0;
+  height: 100%;
+}
+.moyout-menu {
+  position: fixed;
+  left: -100%;
+  top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: block;
+  background-color: #4d4d4d;
+  height: 100%;
+  transition: left .3s;
+}
+.moyout-menu__list {
+  position: relative;
+  height: 100%;
+}
+.moyout-menu__item {
+  height: 50px;
+  line-height: 50px;
+  color: ghostwhite;
+  background-color: dimgray;
+  padding-left: 10px;
+}
+.moyout-menu__item a {
+  text-decoration: none;
+  color: ghostwhite;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: block;
+}
+.moyout-menu__item_top {
+  border-bottom: 1px solid lightsteelblue;
+}
+.moyout-menu__item_bottom {
+  border-top: 1px solid lightsteelblue;
+}
+.moyout-block__subtitle {
+  color: #555;
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.moyout-block__section + .moyout-block__section {
+  border-top: 1px solid #cccccc;
+}
+.moyout-block__section {
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 60px;
+}
+.moyout-block__title {
+  color: #555;
+  display: block;
+  width: 100%;
+  font-size: 110%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 10px;
+}
+.moyout-block {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin: 10px;
+}
+.moyout-block.moyout-block_silent {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+.moyout-label {
+  border: 0;
+  color: #222222;
+  font-size: 100%;
+}
+input.moyout-text {
+  color: #222222;
+  padding: 7px;
+  font-size: 100%;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+}
+input.moyout-checkbox:checked {
+  background-color: #222222;
+}
+input.moyout-checkbox {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  width: 25px;
+  height: 25px;
+  padding: 7px;
+}
+input.moyout-date {
+  color: #222222;
+  padding: 7px;
+  font-size: 100%;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
-    font-family: sans-serif;
-    font-size: 15px;
-    background-color: #eee;
+  font-family: sans-serif;
+  font-size: 15px;
+  background-color: #eeeeee;
 }
 .moyout-content {
-    margin-top: 50px;
+  margin-top: 50px;
 }
-
-
 .moyout-soiler__label {
-    color: dimgray;
-    border-bottom: 1px dashed dimgray;
+  color: #696969;
+  border-bottom: 1px dashed #696969;
 }
 .moyout-soiler__label:active {
-    display: none;
+  display: none;
 }
-.moyout-soiler__label:active+.moyout-soiler__content {
-    display: block;
+.moyout-soiler__label:active + .moyout-soiler__content {
+  display: block;
 }
 .moyout-soiler__content {
-    display: none;
+  display: none;
 }
